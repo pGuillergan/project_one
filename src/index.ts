@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(loggingMiddleware)
 app.use(sessionMiddleware)
 
-app.use('/coffee', coffeeRouter);
+app.use('/coffeee', coffeeRouter);
 app.use('/auth', usersRouter);
 
 log("Set up port listener", "app.listen", `port# ${PORT}`, "none", scriptName)
