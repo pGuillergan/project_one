@@ -1,0 +1,4 @@
+::1 - - [24/May/2020:04:37:15 +0000] "GET /coffee HTTP/1.1" 200 699 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+::1 - - [24/May/2020:04:37:15 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:5000/coffee" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+::1 - - [26/May/2020:17:14:38 +0000] "GET /coffee HTTP/1.1" 200 838 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+::1 - - [26/May/2020:17:14:38 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:5000/coffee" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
