@@ -66,6 +66,7 @@ _________________________________________________________________
 
 TEST ROUTES:
 ------------------------------------------------------------
+```
 Log-in:
 localhost:5000/auth/
     
@@ -78,17 +79,24 @@ localhost:5000/auth/
         "user_email": "paul@gmail.com",
         "user_password": "1234"
 }
-
+```
 ------------------------------------------------------------
+```
 get all:
 localhost:5000/coffee
+```
 ------------------------------------------------------------
+```
 search by id:
 localhost:5000/coffee/3
+```
 ------------------------------------------------------------
+```
 search by keyword:
 localhost:5000/coffee/search/container/Espresso Cup
+```
 ------------------------------------------------------------
+```
 save coffee item:
 localhost:5000/coffee/  then POST, body, then json
 
@@ -100,7 +108,9 @@ localhost:5000/coffee/  then POST, body, then json
         "contains_milk": false,
         "price": "4.00"
     }
+```
 ------------------------------------------------------------
+```
 update coffee item:
     {
         "coffee_name": "Short Black",
@@ -110,9 +120,12 @@ update coffee item:
         "contains_milk": false,
         "price": "2.00"
     }
+```    
 ------------------------------------------------------------
+```
 delete coffee item:
 localhost:5000/coffee/6  then DELETE
+```
 ------------------------------------------------------------
 
 

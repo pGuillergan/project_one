@@ -21,10 +21,6 @@ usersRouter.post('/', async (req, res) => {
 
     let confirmation = await userService.validateUser(user_email, user_password);
 
-    // if(confirmation = "Log-in successful, you will be redirected to main page.."){
-    //     req!.session!.user = true;
-    // }
-
     log("User login route", "post: /", "", confirmation, scriptName);
     res.send(confirmation);
 })
@@ -33,7 +29,5 @@ usersRouter.post('/logout', async (req, res) => {
     
     log("User login out", "post: /", "", "", scriptName);
     
-    req!.session!.user = false;
-
     res.send("User has logged out");
 })

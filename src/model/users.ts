@@ -10,5 +10,4 @@ export class Users{
         this.user_password = user_password;
         this.user_role = user_role;
     }
-
 }
