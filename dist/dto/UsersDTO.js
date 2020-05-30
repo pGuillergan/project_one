@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertToUsersObject = exports.UsersDTO = void 0;
 const users_1 = require("./../model/users");
 class UsersDTO {
     constructor(user_email, user_name, user_password, user_role) {

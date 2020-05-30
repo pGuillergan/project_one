@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isUserValid = void 0;
 function isUserValid(user_email, user_password) {
     const valid_email = typeof user_email == 'string' &&
         user_email.trim() != '';

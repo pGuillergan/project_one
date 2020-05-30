@@ -1,23 +1,4 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -27,8 +8,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.usersRouter = void 0;
 const userService = __importStar(require("../service/UsersService"));
 const express_1 = require("express");
 const Logger_1 = require("./../utils/Logger");
@@ -39,14 +26,10 @@ exports.usersRouter.post('/', (req, res) => __awaiter(void 0, void 0, void 0, fu
     let { user_email, user_password, } = req.body;
     Logger_1.log("User login route", "post: /", `${user_email}, ${user_password}`, "", scriptName);
     let confirmation = yield userService.validateUser(user_email, user_password);
-    // if(confirmation = "Log-in successful, you will be redirected to main page.."){
-    //     req!.session!.user = true;
-    // }
     Logger_1.log("User login route", "post: /", "", confirmation, scriptName);
     res.send(confirmation);
 }));
 exports.usersRouter.post('/logout', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     Logger_1.log("User login out", "post: /", "", "", scriptName);
-    req.session.user = false;
     res.send("User has logged out");
 }));

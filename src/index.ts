@@ -6,6 +6,7 @@ import { usersRouter } from "./router/UsersRouter"
 import { loggingMiddleware } from './middleware/LoggingMiddleware'
 import { sessionMiddleware } from './middleware/SessionMiddleware'
 import {log} from "./utils/Logger";
+import cors from 'cors'
 var path = require('path');
 var scriptName = path.basename(__filename);
 var fs = require('fs');
@@ -15,6 +16,7 @@ log("Set up connections", "none", "none", "none", scriptName)
 //set up connection 
 const bodyParser = require('body-parser');
 export const app = express();
+app.use(cors());
 
 log("Set up middleware", "none", "none", "none", scriptName)
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })

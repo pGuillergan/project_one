@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.loggingMiddleware = void 0;
 function loggingMiddleware(req, res, next) {
     let dateTime = new Date();
     console.log("");

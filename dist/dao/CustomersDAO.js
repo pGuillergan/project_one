@@ -9,7 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteCustomer = exports.updateCustomer = exports.saveCustomer = exports.searchCustomers = exports.getCustomer = exports.getCustomersList = void 0;
 const CustomerDTO_1 = require("./../dto/CustomerDTO");
 const customers_1 = require("./../model/customers");
 const poolDB_1 = require("./poolDB");

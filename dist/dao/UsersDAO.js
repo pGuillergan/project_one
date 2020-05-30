@@ -9,7 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateUser = void 0;
 const poolDB_1 = require("./poolDB");
 const UsersDTO_1 = require("./../dto/UsersDTO");
 const validate_1 = require("./../utils/validate");

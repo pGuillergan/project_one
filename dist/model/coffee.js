@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Coffee = void 0;
 class Coffee {
     constructor(id, coffee_name, shots_of_espresso, container, total_calories, contains_milk, price) {
         this.id = id;

@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertToCoffeeObject = exports.CoffeeDTO = void 0;
 const coffee_1 = require("./../model/coffee");
 class CoffeeDTO {
     constructor(id, coffee_name, shots_of_espresso, container, total_calories, contains_milk, price) {

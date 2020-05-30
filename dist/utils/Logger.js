@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.log = void 0;
 function log(desc, function_name, input, output, scriptName) {
     let dateTime = new Date();
     console.log("   ");

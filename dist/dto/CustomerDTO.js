@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertToCustomersObject = exports.CustomersDTO = void 0;
 const customers_1 = require("./../model/customers");
 class CustomersDTO {
     constructor(phone_number, customer_name, customer_address) {
